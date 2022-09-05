@@ -196,7 +196,7 @@ const Searchbar = React.forwardRef<TextInputHandles, Props>(
                 name="magnify"
                 color={color}
                 size={size}
-                direction={I18nManager.isRTL ? 'rtl' : 'ltr'}
+                direction={I18nManager.getConstants().isRTL ? 'rtl' : 'ltr'}
               />
             ))
           }
@@ -245,7 +245,7 @@ const Searchbar = React.forwardRef<TextInputHandles, Props>(
                   name="close"
                   color={color}
                   size={size}
-                  direction={I18nManager.isRTL ? 'rtl' : 'ltr'}
+                  direction={I18nManager.getConstants().isRTL ? 'rtl' : 'ltr'}
                 />
               ))
             }
@@ -267,7 +267,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     paddingLeft: 8,
     alignSelf: 'stretch',
-    textAlign: I18nManager.isRTL ? 'right' : 'left',
+    textAlign: I18nManager.getConstants().isRTL ? 'right' : 'left',
     minWidth: 0,
   },
   elevation: {
