@@ -8,12 +8,12 @@ import {
   View,
   ViewStyle,
 } from 'react-native';
-import FAB from './FAB';
 import Text from '../Typography/Text';
 import Card from '../Card/Card';
 import { withTheme } from '../../core/theming';
 import type { IconSource } from '../Icon';
 import type { Theme } from '../../types';
+import FAB from './FAB';
 import { getFABGroupColors } from './utils';
 
 export type Props = {
@@ -289,7 +289,7 @@ const FABGroup = ({
 
   return (
     <View pointerEvents="box-none" style={[styles.container, style]}>
-      <TouchableWithoutFeedback onPress={close}>
+      <TouchableWithoutFeedback accessibilityRole="button" onPress={close}>
         <Animated.View
           pointerEvents={open ? 'auto' : 'none'}
           style={[

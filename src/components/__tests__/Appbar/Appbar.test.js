@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { Platform } from 'react-native';
 import Menu from '../../Menu/Menu';
 import Appbar from '../../Appbar';
 import AppbarAction from '../../Appbar/AppbarAction';
@@ -11,7 +12,6 @@ import Searchbar from '../../Searchbar';
 import { tokens } from '../../../styles/themes/v3/tokens';
 import { getTheme } from '../../../core/theming';
 import overlay from '../../../styles/overlay';
-import { Platform } from 'react-native';
 
 describe('Appbar', () => {
   it('does not pass any additional props to Searchbar', () => {
