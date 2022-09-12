@@ -299,6 +299,8 @@ const AnimatedFAB = ({
   const md2Elevation = disabled || !isIOS ? 0 : 6;
   const md3Elevation = disabled || !isIOS ? 0 : 3;
 
+  const newAccessibilityState = { ...accessibilityState, disabled };
+
   return (
     <Surface
       {...rest}
@@ -400,7 +402,7 @@ const AnimatedFAB = ({
               disabled={disabled}
               accessibilityLabel={accessibilityLabel}
               accessibilityRole="button"
-              accessibilityState={{ ...accessibilityState, disabled }}
+              accessibilityState={newAccessibilityState}
               testID={testID}
               style={{ borderRadius }}
             >

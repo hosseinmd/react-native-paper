@@ -220,6 +220,8 @@ const FAB = ({
 
   const md3Elevation = isFlatMode || disabled ? 0 : 3;
 
+  const newAccessibilityState = { ...accessibilityState, disabled };
+
   return (
     <Surface
       {...rest}
@@ -253,7 +255,7 @@ const FAB = ({
         disabled={disabled}
         accessibilityLabel={accessibilityLabel}
         accessibilityRole="button"
-        accessibilityState={{ ...accessibilityState, disabled }}
+        accessibilityState={newAccessibilityState}
         testID={testID}
       >
         <View
