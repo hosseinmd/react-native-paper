@@ -156,7 +156,6 @@ exports[`correctly applies a component as the text label 1`] = `
       </Text>
     </View>
     <TextInput
-      accessibilityLabel="Text input field"
       editable={true}
       maxFontSizeMultiplier={1.5}
       multiline={false}
@@ -344,7 +343,6 @@ exports[`correctly applies default textAlign based on default RTL 1`] = `
       </Text>
     </View>
     <TextInput
-      accessibilityLabel="Text input field"
       editable={true}
       maxFontSizeMultiplier={1.5}
       multiline={false}
@@ -583,7 +581,6 @@ exports[`correctly applies height to multiline Outline TextInput 1`] = `
         </Text>
       </View>
       <TextInput
-        accessibilityLabel="Text input field"
         editable={true}
         maxFontSizeMultiplier={1.5}
         multiline={true}
@@ -770,7 +767,6 @@ exports[`correctly applies textAlign center 1`] = `
       </Text>
     </View>
     <TextInput
-      accessibilityLabel="Text input field"
       editable={true}
       maxFontSizeMultiplier={1.5}
       multiline={false}
@@ -958,7 +954,6 @@ exports[`correctly renders left-side affix adornment, and right-side icon adornm
       </Text>
     </View>
     <TextInput
-      accessibilityLabel="Text input field"
       editable={true}
       maxFontSizeMultiplier={1.5}
       multiline={false}
@@ -1313,7 +1308,6 @@ exports[`correctly renders left-side icon adornment, and right-side affix adornm
       </Text>
     </View>
     <TextInput
-      accessibilityLabel="Text input field"
       editable={true}
       maxFontSizeMultiplier={1.5}
       multiline={false}
